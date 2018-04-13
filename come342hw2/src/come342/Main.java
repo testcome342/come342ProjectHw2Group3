@@ -7,6 +7,7 @@ import java.util.Scanner;
 import Printer.Printer;
 import java.util.Scanner;
 import Entity.Client;
+import Control.AssignStaffToCampaign;
 
 
 
@@ -42,7 +43,7 @@ public class Main {
 		case 3:
 			Printer.printSymbol("*", 30);
 			Printer.println("\nAssign staff to campaign");
-			assignStaffToCampaign();
+			AssignStaffToCampaign.assign();
 			break;
 		case 4:
 			Printer.printSymbol("*", 30);

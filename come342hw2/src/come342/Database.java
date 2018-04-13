@@ -6,12 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 import Entity.Campaign;
 import Entity.Client;
+import Entity.CreativeStaff;
 
 
 public class Database {
     
     public static List<Client> clientList = new ArrayList<Client>();
     public static List<Campaign> campaignList = new ArrayList<Campaign>();
+    public static List<CreativeStaff> creativeStaffList = new ArrayList<CreativeStaff>();
     //public static List<AdminStaff> adminStaffList = new ArrayList<AdminStaff>();
 
     public static void init() {
@@ -28,8 +30,10 @@ public class Database {
         tekno.addNewClientCampaign(tekno5);
         tekno.addNewClientCampaign(tekno10);
         clientList.add(tekno);
-       
-     
+        
+        creativeStaffList.add(new CreativeStaff("Hayrettin Çelik", 1, "20/05/2015"));
+        creativeStaffList.add(new CreativeStaff("Tunahan Iþýk", 2, "23/06/2015"));
+        creativeStaffList.add(new CreativeStaff("Ali Dinçer", 3, "27/06/2015"));     
     }
 }
 

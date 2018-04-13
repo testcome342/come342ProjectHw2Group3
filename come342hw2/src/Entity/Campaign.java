@@ -3,6 +3,8 @@
 
 package Entity;
 
+import java.util.ArrayList;
+import java.util.List;
 import Printer.Printer;
 
 public class Campaign {
@@ -10,6 +12,8 @@ public class Campaign {
 	private String campaignStartDate;
 	private String campaignFinishDate;
 	private double estimatedCost;
+	private List<CreativeStaff> campaignStaffList = new ArrayList<CreativeStaff>();
+    
 	public Campaign() {
 		
 		
@@ -26,8 +30,7 @@ public class Campaign {
 	                    this.getCampaignTitle(),
 	                    this.getCampaignStartDate(),
 	                    this.getCampaignFinishDate(),
-	                    Printer.makeCost(this.getEstimatedCost()));
-	        
+	                    Printer.makeCost(this.getEstimatedCost()));   
 	      
 	    }
 	 
@@ -56,7 +59,12 @@ public class Campaign {
 		this.estimatedCost = estimatedCost;
 	}
 	
+    public List<CreativeStaff> getCampaignStaffList() {
+        return campaignStaffList;
+    }
 	
-	
+    public void addCampaignStaffList(CreativeStaff staff) {
+        this.campaignStaffList.add(staff);
+    }
 
 }
