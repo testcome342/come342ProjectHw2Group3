@@ -1,3 +1,6 @@
+// Author : Murat Özer
+// Date   : 13/04/2018
+
 package Control;
 import Entity.Client;
 import Entity.Campaign;

@@ -1,3 +1,6 @@
+// Author : Murat Özer
+// Date   : 13/04/2018
+
 package come342;
 
 import java.util.Scanner;
@@ -36,11 +39,11 @@ public class Main {
 			Printer.println("\nAdd a new campaign");
 			Client.addNewCampaign();
 			break;
-		/*case 3:
+		case 3:
 			Printer.printSymbol("*", 30);
 			Printer.println("\nAssign staff to campaign");
 			assignStaffToCampaign();
-			break;*/
+			break;
 		case 4:
 			Printer.printSymbol("*", 30);
 			Printer.showClientList();
